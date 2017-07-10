@@ -1,0 +1,92 @@
+@import './config';
+@import './animatedTick';
+@import './notie';
+@import './sidePopup';
+
+@import url('//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
+
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+body {
+    &.locked {
+        position: relative;
+        overflow: hidden !important;
+        &:after {   
+            position: fixed;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            background: rgba(0,0,0,0.3);
+        }
+        
+    }
+}
+
+input[type="text"], .form-row {
+    width: 100%;
+}
+
+
+.right {
+    float: right;
+}
+
+.error {
+    font-size: 75%;
+    color: $red;
+}
+
+.locked {
+    .content {
+        filter: blur(4px);
+    }
+}
+
+header.heading {
+    margin-bottom: 35px;
+}
+
+.successTick .message {
+    margin-top: 50px;
+}
+
+.center {
+    text-align: center;
+}
+#booking {
+    margin-top: 45px;
+}
+
+.slots {
+    .slot {
+        text-align: center;
+        padding: 20px;
+        .slot__inner {
+            background: #f1f1f1 none repeat scroll 0 0;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            line-height: 100px;
+            min-height: 100px;
+            outline: 2px solid #e1e1e1;
+            box-shadow: 0 12px 16px -18px #999;
+            &.booked {
+                background: $red;
+                color: #fff;
+            }
+        }
+    }
+}

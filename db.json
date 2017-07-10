@@ -1,0 +1,76 @@
+{
+  "appointments": [
+    {
+      "id": 1,
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "time": "9:00",
+      "booked": false
+    },
+    {
+      "id": 2,
+      "firstname": "juned",
+      "lastname": "chhipa",
+      "phone": "9898098980",
+      "time": "10:00",
+      "booked": true
+    },
+    {
+      "id": 3,
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "time": "11:00",
+      "booked": false
+    },
+    {
+      "id": 4,
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "time": "12:00",
+      "booked": false
+    },
+    {
+      "id": 5,
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "time": "13:00",
+      "booked": false
+    },
+    {
+      "id": 6,
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "time": "14:00",
+      "booked": false
+    },
+    {
+      "id": 7,
+      "firstname": "yamin",
+      "lastname": "lawar",
+      "phone": "7607608989",
+      "time": "15:00",
+      "booked": true
+    },
+    {
+      "id": 8,
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "time": "16:00",
+      "booked": false
+    },
+    {
+      "id": 9,
+      "firstname": "",
+      "lastname": "",
+      "phone": "",
+      "time": "17:00",
+      "booked": false
+    }
+  ]
+}

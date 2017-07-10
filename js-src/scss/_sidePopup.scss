@@ -1,0 +1,58 @@
+// this is subtle slide movement
+.slide-appear {
+  opacity: 0.01;
+  position: relative;
+  transform: translateX(20%);
+}
+
+.slide-appear.slide-appear-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 500ms ease-in;
+}
+
+.side-popup-wrap {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 101;
+}
+.side-popup {
+
+  background: #f7f7f7;
+  position: absolute;
+  top: 0;
+  min-height: calc(100vh);
+  right: 0;
+  min-width: 40%;
+  max-width: 495px;
+  z-index: 120;
+  padding: 25px 45px;
+  box-shadow: -4px 0 5px 0px rgba(0, 0, 0, 0.25);
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  @media screen and (max-width: 767px) {
+    min-width: 100%;
+    max-width: auto;
+  }
+
+  #close-popup {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    z-index: 50;
+    padding: 5px;
+    background: transparent;
+    color: $blue;
+    border: 0;
+    width: 30px;
+    cursor: pointer;
+    &:hover {
+      background: $blue;
+      color: #fff;
+    }
+  }
+}
